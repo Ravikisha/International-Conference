@@ -1,14 +1,10 @@
 import { useState } from "react";
 import { Disclosure, } from "@headlessui/react";
-import {  MenuIcon, XIcon, MoonIcon } from "@heroicons/react/outline";
+import {  MenuIcon, XIcon, MoonIcon, HomeIcon } from "@heroicons/react/outline";
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/banner-image.png';
 
 const navigation = [
-  // { name: "Dashboard", href: "#", current: true },
-  // { name: "Team", href: "#", current: false },
-  // { name: "Projects", href: "#", current: false },
-  // { name: "Calendar", href: "#", current: false },
   {name: "Home", href:"/", current: true },
   {name: "Conference", href:"/conference", current: false },
   {name: "About Gwalior", href:"/about_gwalior", current: false },
@@ -87,7 +83,8 @@ export default function Navbar() {
                   className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
-                  <MoonIcon className="h-6 w-6" aria-hidden="true" />
+                  <Link to="/">
+                  <HomeIcon className="h-6 w-6" aria-hidden="true"/></Link>
                 </button>
                 </div>
 

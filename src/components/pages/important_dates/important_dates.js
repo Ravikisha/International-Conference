@@ -3,7 +3,7 @@ import React from "react";
 const ImportantDates = () => {
   return (
     <>
-      <body className="bg-gray-50">
+      <div className="bg-gray-50">
         <div className="p-4 mt-4">
           <h1 className="text-4xl text-center font-semibold mb-6">
             Important Dates
@@ -83,7 +83,7 @@ const ImportantDates = () => {
             </div>
           </div>
         </div>
-      </body>
+      </div>
     </>
   );
 };

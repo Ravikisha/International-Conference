@@ -29,8 +29,8 @@ const Conference = () => {
       </div>
 
       <div className="container mx-auto px-6 p-10" id="overview">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
-          Overview of the Conference - Hybrid Mode
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
+          Prestige Institute of Management & Research, Gwalior
         </h2>
         <div className="flex items-center flex-wrap mb-20">
           <div className="w-full md:w-1/2 pr-10">
