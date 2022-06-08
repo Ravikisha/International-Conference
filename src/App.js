@@ -3,6 +3,9 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Home from './components/pages/homepage/homepage';
 import Contact from './components/pages/contactpage/contactpage';
 import Pricing from './components/pages/pricing/pricing';
+import ImportantDates from './components/pages/important_dates/important_dates';
+import Schedule from './components/pages/schedule/schedule';
+import Advisory from './components/pages/advisory_member/advisory_member';
 function App() {
   return (
     <Router>
@@ -12,9 +15,9 @@ function App() {
        <Route path="/conference" element={<div>Conference</div>} />
         <Route path="/about_gwalior" element={<div>About Gwalior</div>} />
         <Route path="/guidelines" element={<div>Guidelines</div>} />
-        <Route path="/schedule" element={<div>Schedule</div>} />
-        <Route path="/important_dates" element={<div>Important Dates</div>} />
-        <Route path="/advisory_memebers" element={<div>Advisory Memebers</div>} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/important_dates" element={<ImportantDates />} />
+        <Route path="/advisory_memebers" element={<Advisory />} />
         <Route path="/registration" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
      </Routes>
