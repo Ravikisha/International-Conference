@@ -6,13 +6,14 @@ import Pricing from './components/pages/pricing/pricing';
 import ImportantDates from './components/pages/important_dates/important_dates';
 import Schedule from './components/pages/schedule/schedule';
 import Advisory from './components/pages/advisory_member/advisory_member';
+import Conference from './components/pages/conference/conference';
 function App() {
   return (
     <Router>
      <Navbar />
      <Routes>
        <Route path="/" exact element={<Home />} />
-       <Route path="/conference" element={<div>Conference</div>} />
+       <Route path="/conference" element={<Conference />} />
         <Route path="/about_gwalior" element={<div>About Gwalior</div>} />
         <Route path="/guidelines" element={<div>Guidelines</div>} />
         <Route path="/schedule" element={<Schedule />} />
