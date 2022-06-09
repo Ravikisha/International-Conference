@@ -5,7 +5,7 @@ const ImportantDates = () => {
     <>
       <div className="bg-gray-50">
         <div className="p-4 mt-4">
-          <h1 className="text-4xl text-center font-semibold mb-6">
+          <h1 className="text-4xl text-center font-semibold mb-6 underline decoration-rose-500">
             Important Dates
           </h1>
           <div className="container">

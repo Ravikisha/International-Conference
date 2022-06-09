@@ -4,7 +4,7 @@ const Guideline = () => {
   return (
     <>
       <div className="container mx-auto px-6 p-10" id="overview">
-        <h2 className="text-6xl font-bold text-center text-sky-800 mb-10 underline">
+        <h2 className="text-6xl font-bold text-center text-sky-800 decoration-pink-500 mb-10 underline">
           Guidelines
         </h2>
         <div className="flex items-center flex-wrap mb-20">
@@ -127,7 +127,7 @@ const Guideline = () => {
               </ol>
             </p>
           </div>
-              <div className="m-5 text-red-900 font-bold text-3xl"><span className="text-6xl font-bold">*</span>The last date for the receipt of entries is December 10, 2021 in the office of the Director, Prestige Institute of Management, Gwalior.</div>
+              <div className="m-5 rounded-full text-red-900 font-bold text-3xl"><span className="text-6xl font-bold">*</span>The last date for the receipt of entries is December 10, 2021 in the office of the Director, Prestige Institute of Management, Gwalior.</div>
         </div>
       </div>
     </>

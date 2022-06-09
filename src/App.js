@@ -9,6 +9,7 @@ import Advisory from './components/pages/advisory_member/advisory_member';
 import Conference from './components/pages/conference/conference';
 import Guidelines from './components/pages/guideline/guideline';
 import NotFound from './components/pages/notfound/notfound';
+import AboutGwalior from './components/pages/about_gwalior/about_gwalior';
 function App() {
   return (
     <Router>
@@ -16,7 +17,7 @@ function App() {
      <Routes>
        <Route path="/" exact element={<Home />} />
        <Route path="/conference" element={<Conference />} />
-        <Route path="/about_gwalior" element={<div>About Gwalior</div>} />
+        <Route path="/about_gwalior" element={<AboutGwalior />} />
         <Route path="/guidelines" element={<Guidelines />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/important_dates" element={<ImportantDates />} />

@@ -29,7 +29,7 @@ const Conference = () => {
       </div>
 
       <div className="container mx-auto px-6 p-10" id="overview">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10 underline decoration-sky-500">
           Prestige Institute of Management & Research, Gwalior
         </h2>
         <div className="flex items-center flex-wrap mb-20">
@@ -201,7 +201,7 @@ const Conference = () => {
 
       <div className="bg-gray-100">
         <div className="container mx-auto px-6 py-20">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 underline decoration-pink-500">
             Themes
           </h2>
           <div className="flex flex-wrap">
