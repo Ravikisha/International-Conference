@@ -1,10 +1,13 @@
 import React from "react";
 import "./this.css";
 import ThemeCard from "./themeCard";
+// import Gallery from "./gallery";
+// import Courseal from './courseal';
 
 const Conference = () => {
   return (
     <>
+    {/* <Courseal /> */}
       <div
         className="py-20 bg-cover bg-no-repeat bg-fixed" id="head"
         style={{
@@ -73,15 +76,6 @@ const Conference = () => {
               Conference Objectives
             </h4>
             <p className="mb-8">
-              {/* <StyledOl>
-                <StyledLi>Item 1</StyledLi>
-
-                <StyledLi2>Item 2</StyledLi2>
-
-                <StyledLi3>More Item 6</StyledLi3>
-
-                <StyledLi4>More Item 7</StyledLi4>
-              </StyledOl> */}
               <ol className="style_1">
                 <li>
                   To identify and acknowledge pioneering and innovative efforts
@@ -229,6 +223,9 @@ const Conference = () => {
           </div>
         </div>
       </div>
+      {/* <div className="text-center text-3xl mt-4 font-bold underline decoration-sky-500">Gallery</div> */}
+      {/* <Gallery /> */}
+      {/* <Courseal /> */}
 
       <div style={{ backgroundColor: "#667eea" }}>
         <div className="container mx-auto px-6 text-center py-20">

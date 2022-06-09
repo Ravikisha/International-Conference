@@ -1,6 +1,5 @@
 import Navbar from './components/navbar/navbar.js';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import Home from './components/pages/homepage/homepage';
 import Contact from './components/pages/contactpage/contactpage';
 import Pricing from './components/pages/pricing/pricing';
 import ImportantDates from './components/pages/important_dates/important_dates';
@@ -10,6 +9,7 @@ import Conference from './components/pages/conference/conference';
 import Guidelines from './components/pages/guideline/guideline';
 import NotFound from './components/pages/notfound/notfound';
 import AboutGwalior from './components/pages/about_gwalior/about_gwalior';
+import Home from './components/pages/home/home';
 function App() {
   return (
     <Router>
