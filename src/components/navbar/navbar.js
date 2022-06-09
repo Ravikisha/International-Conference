@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Disclosure, } from "@headlessui/react";
-import {  MenuIcon, XIcon, MoonIcon, HomeIcon } from "@heroicons/react/outline";
+import {  MenuIcon, XIcon, HomeIcon } from "@heroicons/react/outline";
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/banner-image.png';
 

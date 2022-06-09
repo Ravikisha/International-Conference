@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo");
-body,
+/* body,
 html {
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ html {
 html {
     display: block;
   }
-}
+} */
 
 .message {
   border: 1px solid #d2d0d0;
@@ -124,15 +124,55 @@ h1 {
   padding-right: 0.5em;
   color: #444;
 }
-.item:nth-of-type(3n) {
-  background-image: url("https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=");
+.item:nth-of-type(1) {
+  background-image: url("../../../assets/1.jpeg");
 }
-.item:nth-of-type(4n) {
-  background-image: url("https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
+.item:nth-of-type(2) {
+  background-image: url("../../../assets/2.jpeg");
 }
-.item:nth-of-type(5n) {
-  background-image: url("https://images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+.item:nth-of-type(3) {
+  background-image: url("../../../assets/3.jpeg");
 }
-.item:nth-of-type(6n) {
-  background-image: url("https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+.item:nth-of-type(4) {
+  background-image: url("../../../assets/4.jpeg");
 }
+.item:nth-of-type(5) {
+  background-image: url("../../../assets/5.jpeg");
+}
+.item:nth-of-type(6) {
+  background-image: url("../../../assets/6.jpeg");
+}
+.item:nth-of-type(7) {
+  background-image: url("../../../assets/7.jpeg");
+}
+.item:nth-of-type(8) {
+  background-image: url("../../../assets/8.jpeg");
+}
+.item:nth-of-type(9) {
+  background-image: url("../../../assets/9.jpeg");
+}
+.item:nth-of-type(10) {
+  background-image: url("../../../assets/10.jpeg");
+}
+.item:nth-of-type(11) {
+  background-image: url("../../../assets/11.jpeg");
+}
+.item:nth-of-type(12) {
+  background-image: url("../../../assets/12.jpeg");
+}
+.item:nth-of-type(13) {
+  background-image: url("../../../assets/13.jpeg");
+}
+.item:nth-of-type(14) {
+  background-image: url("../../../assets/14.jpeg");
+}
+.item:nth-of-type(15) {
+  background-image: url("../../../assets/15.jpeg");
+}
+.item:nth-of-type(16) {
+  background-image: url("../../../assets/16.jpeg");
+}
+.item:nth-of-type(17) {
+  background-image: url("../../../assets/17.jpeg");
+}
+

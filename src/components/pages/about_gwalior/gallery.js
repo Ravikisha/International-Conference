@@ -3,56 +3,60 @@ import './gallery.css';
 const Gallery = () => {
   return (
     <>
-      <div class="message">
+      <div className="message">
         Sorry, your browser does not support CSS Grid. 😅
       </div>
-      <section class="section">
-        <h1>Nom Nom Gallery</h1>
-        <div class="grid">
-          <div class="item">
-            <div class="item__details">jelly-o brownie sweet</div>
+      <section className="section">
+        <div className="grid">
+          <div className="item item--medium">
+            <div className="item__details">The Sky of Happiness</div>
           </div>
-          <div class="item item--large">
-            <div class="item__details">Muffin jelly gingerbread</div>
+          <div className="item item--large">
+            <div className="item__details">The view of All</div>
           </div>
-          <div class="item item--medium">
-            <div class="item__details">sesame snaps chocolate</div>
+          <div className="item item--medium">
+            <div className="item__details">big bang Market</div>
           </div>
-          <div class="item item--large">
-            <div class="item__details">Oat cake</div>
+          <div className="item item--large">
+            <div className="item__details">the love view</div>
           </div>
-          <div class="item item--full">
-            <div class="item__details">jujubes cheesecake</div>
+          <div className="item item--full">
+            <div className="item__details">the roller coster</div>
           </div>
-          <div class="item item--medium">
-            <div class="item__details">Dragée pudding brownie</div>
+          <div className="item item--medium">
+            <div className="item__details">lights of joy !</div>
           </div>
-          <div class="item item--large">
-            <div class="item__details">Oat cake</div>
+          <div className="item item--large">
+            <div className="item__details">A tree of light</div>
           </div>
-          <div class="item">
-            <div class="item__details">powder toffee</div>
+          <div className="item item--medium">
+            <div className="item__details">the burning rock</div>
           </div>
-          <div class="item item--medium">
-            <div class="item__details">pudding cheesecake</div>
+          <div className="item item--medium">
+            <div className="item__details">Circle of smiles</div>
           </div>
-          <div class="item item--large">
-            <div class="item__details">toffee bear claw</div>
+          <div className="item item--large">
+            <div className="item__details">sweet sky and lovely afternoon</div>
           </div>
-          <div class="item">
-            <div class="item__details">cake cookie croissant</div>
+          <div className="item item--large">
+            <div className="item__details">the house of believe</div>
           </div>
-          <div class="item item--medium">
-            <div class="item__details">liquorice sweet roll</div>
+          <div className="item item--medium">
+            <div className="item__details">Never live again</div>
           </div>
-          <div class="item item--medium">
-            <div class="item__details">chocolate marzipan</div>
+          <div className="item item--medium">
+            <div className="item__details">All at once</div>
           </div>
-          <div class="item item--large">
-            <div class="item__details">danish dessert lollipop</div>
+          <div className="item item--large">
+            <div className="item__details">Someone keep us</div>
           </div>
-          <div class="item">
-            <div class="item__details">sugar plum dragée</div>
+          <div className="item item--medium">
+            <div className="item__details">Be happy</div>
+          </div>
+          <div className="item item--large">
+            <div className="item__details">a castle</div>
+          </div><div className="item item--medium">
+            <div className="item__details">colors of gods</div>
           </div>
         </div>
       </section>
