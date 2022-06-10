@@ -1,6 +1,37 @@
 import React from "react";
+import Database from "../../database";
+import {ref, push} from "firebase/database";
 
 const ContactPage = () => {
+  const [first_name,setFirstName] = React.useState("");
+  const [last_name,setLastName] = React.useState("");
+  const [email,setEmail] = React.useState("");
+  const [message,setMessage] = React.useState("");
+
+  function submitHandler(e){
+    e.preventDefault();
+    push(ref(Database, "ic-data"),{
+      first_name : first_name,
+      last_name : last_name,
+      email : email,
+      message : message,
+      date: new Date().toLocaleString()
+    }).then(()=>{
+      alert("we got your message !, We will contact you soon.");
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setMessage("");
+    }).catch((err)=>{
+      alert(err.message);
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setMessage("");
+    })
+    
+  };
+
   return (
     <>
       <br />
@@ -18,12 +49,12 @@ const ContactPage = () => {
           </h3>
         </div>
 
-        <form className="w-full">
+        <form className="w-full" onSubmit={submitHandler}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-first-name"
+                htmlFor="grid-first-name"
               >
                 First Name
               </label>
@@ -32,14 +63,16 @@ const ContactPage = () => {
                 id="grid-first-name"
                 type="text"
                 required
+                name="first_name"
                 placeholder="Jane"
+                value={first_name}
+                onChange={(e)=>setFirstName(e.target.value)}
               />
-              
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-last-name"
+                htmlFor="grid-last-name"
               >
                 Last Name
               </label>
@@ -48,7 +81,10 @@ const ContactPage = () => {
                 id="grid-last-name"
                 type="text"
                 required
+                name="last_name"
                 placeholder="Doe"
+                value={last_name}
+                onChange={(e)=>setLastName(e.target.value)}
               />
             </div>
           </div>
@@ -56,7 +92,7 @@ const ContactPage = () => {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-password"
+                htmlFor="grid-password"
               >
                 Email Address
               </label>
@@ -65,7 +101,11 @@ const ContactPage = () => {
                 id="grid-email"
                 type="email"
                 required
+                name="email"
                 placeholder="********@*****.**"
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
+
               />
             </div>
           </div>
@@ -74,13 +114,16 @@ const ContactPage = () => {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-password"
+                htmlFor="grid-password"
               >
                 Your Message
               </label>
               <textarea
                 rows="10"
                 required
+                name="message"
+                value={message}
+                onChange={(e)=>setMessage(e.target.value)}
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               ></textarea>
             </div>

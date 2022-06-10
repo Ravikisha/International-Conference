@@ -10,6 +10,8 @@ import Guidelines from './components/pages/guideline/guideline';
 import NotFound from './components/pages/notfound/notfound';
 import AboutGwalior from './components/pages/about_gwalior/about_gwalior';
 import Home from './components/pages/home/home';
+import Logs from './components/pages/logs/logs';
+import Message from './components/pages/messages/messages';
 function App() {
   return (
     <Router>
@@ -24,6 +26,8 @@ function App() {
         <Route path="/advisory_memebers" element={<Advisory />} />
         <Route path="/registration" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/logs" element={<Logs />} />
+        <Route path="/messages" element={<Message />} />
         <Route path="*" element={<NotFound />} />
      </Routes>
     </Router>
