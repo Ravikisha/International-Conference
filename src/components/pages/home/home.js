@@ -17,7 +17,7 @@ const Home = () => {
             Prestige Institute of Management & Research
           </h2>
           <h3 className="text-2xl mb-8 text-black">Gwalior, MP, India</h3>
-          <a href="#overview">
+          <a href="https://prestigegwl.org/index.php" target="blank">
             <button className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-blue-500 hover:bg-gray-800">
               Let's Go !
             </button>
