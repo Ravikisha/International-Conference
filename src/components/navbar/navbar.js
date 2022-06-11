@@ -1,27 +1,30 @@
 import { useState } from "react";
-import { Disclosure, } from "@headlessui/react";
-import {  MenuIcon, XIcon, HomeIcon } from "@heroicons/react/outline";
-import {Link} from 'react-router-dom';
-import Logo from '../../assets/logo.png';
-const navigation = [
-  {name: "Home", href:"/", current: true },
-  {name: "Conference", href:"/conference", current: false },
-  {name: "About Gwalior", href:"/about_gwalior", current: false },
-  {name: "Guidelines", href:"/guidelines", current: false },
-  {name: "Schedule", href:"/schedule", current: false },
-  {name: "Important Dates", href:"/important_dates", current: false },
-  {name: "Advisory Memebers", href:"/advisory_memebers", current: false },
-  {name: "Registration", href:"/registration", current: false },
-  {name: "Contact", href:"/contact", current: false },
-];
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon, HomeIcon } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png";
+import { useLocation } from "react-router-dom";
 
+const navigation = [
+  { name: "Home", href: "/", current: true },
+  { name: "Conference", href: "/conference", current: false },
+  { name: "About Gwalior", href: "/about_gwalior", current: false },
+  { name: "Guidelines", href: "/guidelines", current: false },
+  { name: "Schedule", href: "/schedule", current: false },
+  { name: "Important Dates", href: "/important_dates", current: false },
+  { name: "Advisory Memebers", href: "/advisory_memebers", current: false },
+  { name: "Registration", href: "/registration", current: false },
+  { name: "Contact", href: "/contact", current: false },
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
-  const [isOpen,setIsOpen] = useState('/');
+  const location = useLocation();
+
+  const [isOpen, setIsOpen] = useState(location.pathname);
   // const [isDark, setIsDark] = useState(false);
   return (
     <Disclosure as="nav" className="bg-gray-800">
@@ -57,9 +60,9 @@ export default function Navbar() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
-                      onClick={()=>{
-                        setIsOpen(item.href)
-                      }}
+                        onClick={() => {
+                          setIsOpen(item.href);
+                        }}
                         key={item.name}
                         to={item.href}
                         className={classNames(
@@ -83,12 +86,13 @@ export default function Navbar() {
                 >
                   <span className="sr-only">View notifications</span>
                   <Link to="/">
-                  <HomeIcon className="h-6 w-6" aria-hidden="true"/></Link>
+                    <HomeIcon className="h-6 w-6" aria-hidden="true" />
+                  </Link>
                 </button>
-                </div>
+              </div>
 
-                {/* Profile dropdown */}
-                {/* <Menu as="div" className="ml-3 relative">
+              {/* Profile dropdown */}
+              {/* <Menu as="div" className="ml-3 relative">
                   <div>
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
@@ -159,23 +163,23 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link to={item.href} key={item.name}>
-                <Disclosure.Button
-                  onClick={()=>{
-                    setIsOpen(item.href)
-                  }}
-                  key={item.name}
-                  // as="Link"
-                  // to={item.href}
-                  className={classNames(
-                    item.href === isOpen
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
+                  <Disclosure.Button
+                    // onClick={() => {
+                    //   setIsOpen(item.href);
+                    // }}
+                    key={item.name}
+                    // as="Link"
+                    // to={item.href}
+                    className={classNames(
+                      item.href === isOpen
+                        ? "bg-gray-900 text-white"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "block px-3 py-2 rounded-md text-base font-medium"
+                    )}
+                    aria-current={item.current ? "page" : undefined}
+                  >
+                    {item.name}
+                  </Disclosure.Button>
                 </Link>
               ))}
             </div>
