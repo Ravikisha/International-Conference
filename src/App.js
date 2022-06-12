@@ -12,8 +12,10 @@ import AboutGwalior from './components/pages/about_gwalior/about_gwalior';
 import Home from './components/pages/home/home';
 import Logs from './components/pages/logs/logs';
 import Message from './components/pages/messages/messages';
+import Footer from './components/footer/footer';
 function App() {
   return (
+    <>
     <Router>
      <Navbar />
      <Routes>
@@ -30,7 +32,9 @@ function App() {
         <Route path="/messages" element={<Message />} />
         <Route path="*" element={<NotFound />} />
      </Routes>
+     <Footer />
     </Router>
+     </>
   );
 }
 
