@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+![Poster](./docs/docs1.png)
+# International Conference Website 🌐
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prestige Institute of Management and Research, Gwalior
 
-## Available Scripts
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce8dab29-c428-4c18-8a12-427ab1dd7cb6/deploy-status)](https://app.netlify.com/sites/statuesque-moxie-abc30a/deploys)
 
-In the project directory, you can run:
+Welcome to the International Conference website, hosted by Prestige Institute of Management and Research, Gwalior. This platform serves as an interactive hub for scholars, students, and professionals to participate in the conference, submit research papers, and engage in knowledge exchange.
 
-### `npm start`
+## About the Conference 📚
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The International Conference is an annual event organized by Prestige Institute of Management and Research, Gwalior, to facilitate the exchange of ideas, research, and knowledge. Scholars, students, and professionals from various fields come together to submit research papers, articles, and engage in academic discussions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Overview 🚀
 
-### `npm test`
+This website is designed to provide information about the conference, its schedule, speakers, and submission guidelines. It allows participants to submit their research papers, view conference updates, and register for the event. The site is hosted on Netlify at [International Conference](https://statuesque-moxie-abc30a.netlify.app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features and Functionality 🌟
 
-### `npm run build`
+- Conference Schedule and Agenda.
+- Speaker Profiles and Session Details.
+- Research Paper Submission Portal.
+- Registration for Conference Participation.
+- Event Updates and Notifications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology Stack 🛠️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="left">
+<img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" />
+<img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3" alt="CSS3" />
+<img src="https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript" alt="JavaScript" />
+<img src="https://img.shields.io/badge/-React-black?style=flat&logo=react" alt="React" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+<img src="https://img.shields.io/badge/-Node.js-black?style=flat&logo=node.js" alt="Node.js" />
+<img src="https://img.shields.io/badge/-Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Netlify" />
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation Steps 📦
 
-### `npm run eject`
+To set up the project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/Ravikisha/International-Conference.git
+   cd International-Conference
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install Dependencies:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Install the required Node.js packages.
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the Development Server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Start the development server to run the project locally.
 
-### Code Splitting
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Access the Local Project:**
 
-### Analyzing the Bundle Size
+   Open your web browser and visit `http://localhost:3000` to see the project in action.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Contribute 🤝
 
-### Making a Progressive Web App
+We welcome contributions from developers, designers, and enthusiasts who want to make the International Conference website even better. You can help by adding new features, improving the design, fixing bugs, or enhancing the user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Fork the Repository:**
 
-### Advanced Configuration
+   Click the "Fork" button to create your copy of this repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Clone Your Fork:**
 
-### Deployment
+   ```bash
+   git clone https://github.com/Ravikisha/International-Conference.git
+   cd International-Conference
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Create a Branch:**
 
-### `npm run build` fails to minify
+   Create a new branch for your contribution.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git checkout -b your-branch-name
+   ```
+
+4. **Make Your Contribution:**
+
+   Contribute your changes to the project.
+
+5. **Commit Your Changes:**
+
+   ```bash
+   git commit -m "Your commit message"
+   ```
+
+6. **Push Your Changes:**
+
+   Push your changes to your fork.
+
+   ```bash
+   git push origin your-branch-name
+   ```
+
+7. **Create a Pull Request:**
+
+   Go to the original repository and create a pull request with your changes.
+
+## License 📜
+
+This project is open-source and is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+The International Conference website serves as a platform for academic collaboration, research paper submissions, and knowledge exchange. We invite you to explore and contribute to this project to make it even more valuable to our academic community. 🌍📊
+
+For more information, contact us at [@RaviKishan](mailto:ravikishan63392@gmail.com).
